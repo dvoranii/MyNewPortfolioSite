@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A full-stack web development and design house"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general-styles.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="icon" href="img/logo.png">
+    <title>IldiDev &mdash; Web Development & Design</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo-link"><h2 class="logo"></h2></a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ildi-dvorani-a04452210/" onclick="window.open(this.href,'_blank')">
+                        <ion-icon class="linkedin-icon" name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="https://github.com/dvoranii" onclick="window.open(this.href,'_blank')">
+                        <img class="github-icon" src="img/githublogo2.png" alt=""/>
+                    </a>
+                    <a href="https://codepen.io/dvoranii" onclick="window.open(this.href,'_blank')">
+                        <ion-icon class="codepen-icon" name="logo-codepen"></ion-icon>
+                    </a>
+
+                </div>
+
+                <li><a class="main-nav-link" id="nav-services" href="#services">Services</a></li>
+                <li><a class="main-nav-link" id="nav-portfolio" href="#my-work">Portfolio</a></li>
+                <li><a href="#cta"><button class="custom-btn btn-3" id="cta-btn"><span>Connect</span></button></a></li>
+            </ul>
+        </nav>
+        
+        
+        <button class="btn-mobile-nav">
+            <div class="burger-btn" name="open-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div class="x-btn" name="close-menu">
+                <div class="x-line1"></div>
+                <div class="x-line2"></div>
+            </div>
+        </button>
+
+    </header>
+
+    <section class="section-hero">
+    <div class="hero">
+        
+        <!--Content before waves-->
+
+        <div class="inner-header flex">
+
+            <div class="header-container">
+
+                <h1 class="hero-intro">Hi, I'm Ildi Dvorani</h1>
+
+                <div class="hero-job-title">
+                    <span class="hero-job-title-text">&nbsp;</span>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#my-work"><button class="custom-btn btn-3"><span>Projects</span></button></a>
+                    <a href="#services"><button class="custom-btn btn-3"><span>Services</span></button></a>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+
+
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+
+    </div>
+</section>
+    <!--Header ends-->
+
+    <!--Content starts-->]
+    <section class="section--services" id="services">
+        <div class="container services-title-container">
+            <h2 class="services-title">What I Do</h2>
+            <!-- <p class="services-title-secondary">What I Do</p> -->
+        </div>
+
+        <div class="container grid grid--2--cols service-divs">
+
+            <!-- Development -->
+
+            <div class="service-img-box img-box-2">
+                <img class="service-img" src="img/webdev-monitor-pic-final.png" alt="Development picture" />
+
+            </div>
+
+            <div class="service-text-box text-box-3">
+                <h2 class="heading-secondary">Development</h2>
+                <p class="service-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea earum veniam ipsum
+                    exercitationem laborum magnam corporis assumenda laudantium. Doloribus repellat pariatur dolorum
+                    adipisci doloremque impedit veritatis natus illo assumenda.
+                </p>
+            </div>
+
+            <!-- Design -->
+
+            <div class="service-text-box design-box">
+                <h2 class="heading-secondary">Design</h2>
+                <p class="service-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea earum veniam ipsum
+                    exercitationem laborum magnam corporis assumenda laudantium. Doloribus repellat pariatur dolorum
+                    adipisci doloremque impedit veritatis natus illo assumenda.
+                </p>
+            </div>
+            <div class="service-img-box design-img">
+                <img class="service-img service-img-1" src="img/webdesign-monitor-pic.png"
+                    alt="Development picture" />
+<!--                     
+                    <div class="circle"></div> -->
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div class="skills-container">
+                
+                <div class="skills-grid">
+                        <div class="skill skill-animation">
+                            <p class="skill-name css-label">CSS</p>
+                            <ion-icon class="icon css" name="logo-css3"></ion-icon>
+
+                        </div>
+                        
+                        <div class="skill skill-animation">
+                            <p class="skill-name html-label">HTML5</p>
+                            <ion-icon class="icon html" name="logo-html5"></ion-icon>
+                        </div>
+
+                        <div class="skill skill-animation">
+                            <p class="skill-name javascript-label">Javascript</p>
+                            <ion-icon class="icon javascript" name="logo-javascript"></ion-icon>
+                        </div>
+                        
+
+                        <div class="skill skill-animation">
+                            <p class="skill-name angular-label">Angular</p>
+                            <ion-icon class="icon angular" name="logo-angular"></ion-icon> 
+                        </div>
+                        
+
+                        <div class="skill skill-animation">
+                            <p class="skill-name node-label">NodeJS</p>   
+                            <ion-icon class="icon node" name="logo-nodejs"></ion-icon>
+                        </div>
+                        
+
+                        <div class="skill skill-animation">
+                            <p class="skill-name mongo-label">MongoDB</p>
+                            <img class="icon mongo" src="https://img.icons8.com/color/48/000000/mongodb.png" />
+                        </div>
+                        
+
+                        <div class="skill photoshop-container skill-animation">
+                            <p class="skill-name photoshop-label">Photoshop</p>
+                            <img class="photoshop-logo" src="img/photoshop-2.png" alt="">
+                        </div>
+                    
+                </div>
+                <h2 class="heading-secondary skills-title">My Skills</h2>
+            </div>
+
+            
+        </div>
+
+        <!--Content ends-->
+
+    </section>
+
+    <section class="section-portfolio" id="my-work">
+        <div class="container">
+            <!-- <h2 class="services-title portfolio-title">Portfolio</h2> -->
+            <p class="services-title-secondary range-of-work">PROJECTS</p>
+
+            <!-- Pop up modal  -->
+
+            <div class="modal-bg">
+                <div class="modal">
+                    <h2>Project Title</h2>
+                    <div class="project-container">
+
+                    
+                    <div class="project-img">
+                        <img src="img/computer-monitor.png" alt="">
+                    </div>
+                    <div class="project-details">
+                        <p>Demo & Code</p>
+                        <p>Technologies used</p>
+                        <p>Description</p>
+                    </div>
+                </div>
+                    <button class="modal-close">X</button>
+                </div>
+            </div>
+
+            <div class="portfolio-items container grid grid--4--cols">
+
+                    <a class="modalOpen-1" href="">
+                        <img class="item-img" src="img/photoshop-2.png" alt="">
+                    </a>
+                    <a class="modalOpen-2" href="">
+                        <img class="item-img" src="img/photoshop-2.png" alt="">
+                    </a>
+                    <a class="modalOpen-3" href="">
+                        <img class="item-img" src="img/photoshop-2.png" alt="">
+                    </a>
+                    <a class="modalOpen-4" href="">
+                        <img class="item-img" src="img/photoshop-2.png" alt="">
+                    </a>
+                    
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-cta" id="cta">
+        <div class="container">
+            <div class="cta">
+                <div class="cta-text-box">
+                    <h2 class="cta-title">Let's Connect</h2>
+                    <p class="cta-text">
+                        Have a question or want to inquire about a project?
+                        Fill out the form below and I will return your message shortly.
+                    </p>
+                    <form action="" class="cta-form">
+                        <div>
+                            <label class="label" for="full-name">Full Name</label>
+                            <input id="full-name" type="text" placeholder="&nbsp;Your name" required>
+                        </div>
+
+                        <div class="email-div">
+                            <label class="label" for="email">Email address</label>
+                            <input id="email" type="text" placeholder="&nbsp;me@example.com" required>
+                        </div>
+
+                        <div class="textarea">
+                            <label class="label" for="message">Message</label>
+                            <textarea 
+                            name="" 
+                            id="" 
+                            cols="30" 
+                            rows="30" 
+                            maxlength="733px"></textarea>
+                        </div>
+
+                        <div class="send-btn-div">
+                            <button class="custom-btn btn-3 btn-send"><span>Send</span></button>
+
+                        </div>
+                        <br>
+
+                        <div class="outlook-div">
+                            <p>Use Outlook? Simply click the link below:</p>
+                            <br>
+                            <a class="email-link" href="mailto:dvoranii@ildidev.com" onclick="window.open(this.href,'_blank')">dvoranii@ildidev.com</a>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="cta-img-box" role="img" aria-label="Man on the phone and laptop"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer"></section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

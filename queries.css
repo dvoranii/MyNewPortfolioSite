@@ -1,0 +1,290 @@
+/* rem and em do not depend on html font-size in media queries 
+Instead, 1rem = 1em = 16px
+*/
+
+/* ************ */
+/* Below 1600px (smaller desktops) */
+/* ************ */
+@media (max-width: 100em){
+
+    .container{
+        max-width: 120rem;
+    }
+    
+    textarea{
+        max-width:734px;
+    }
+
+
+}
+
+
+/* Below 1296px */
+@media(max-width: 81em){
+    .container{
+        max-width: 105rem;
+    }
+
+    .portfolio-items{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .hero-intro{
+        margin-bottom: 1.8rem;
+    }
+
+    .service-text-box{
+        padding-right: 1.4rem;
+    }
+
+    .cta-form{
+        grid-template-columns: 1fr;
+    }
+    .email-div{
+        grid-row: 2;
+    }
+
+    .btn-send{
+        top: 70%;
+    }
+
+    textarea{
+        max-width:549px;
+    }
+
+    
+
+}
+
+@media(max-width:69em){
+    
+    .container{
+        max-width: 100rem;
+        
+    }
+
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav{
+        display: block;
+        z-index: 10001;
+    }
+
+
+    .main-nav{
+        /* background-color: #3b3b99e5; */
+        background-color:rgba(20, 83, 150, 0.959) ;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        /* slide from left */
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in;
+
+        /* Hide navigation */
+        /* allows no transitions
+        display: none; */
+
+        /* 1) Hide it visually */
+        opacity: 0;
+
+        /* 2) Make it unaccessible to mouse and keyboard  */
+        pointer-events: none;
+
+        /* 3) Hide it from screen readers */
+        visibility: hidden;
+        /* display: none; */
+
+        
+    }
+
+    .nav-open .main-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+        z-index: 1000;
+        display: flex;
+                 
+    }
+
+
+    #nav-portfolio, #nav-services{
+        display: block;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 3rem;
+        color: white;
+    }
+
+    #cta-btn{
+        color: white;
+        font-size: 1.8rem;
+    }
+
+    .nav-open .main-nav-list,
+    .main-nav-list{
+        flex-direction: column;
+        font-size: 2.4rem;
+        gap: 6rem;
+    }
+
+    .nav-open .x-btn{
+        display: flex;
+    }
+
+    .nav-open .burger-btn{
+        display: none;
+    }
+      .social-icons{
+          display: flex;
+          gap: 1.2rem;
+          transform: scale(1.1);
+
+      }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box{
+        height: 32rem;
+        grid-row: 1;
+    }
+
+
+    .section-cta{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+ 
+ @media(max-width:48em){
+    html {
+        font-size: 9px;
+    }
+
+    .container{
+        max-width: 80rem;
+    }
+
+    .service-text-box{
+        padding-right: 1.4rem;
+    }
+
+    .portfolio-items{
+        justify-items: center;
+    }
+
+    textarea{
+        max-width: 585px;
+    }
+
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box{
+        height: 32rem;
+        grid-row: 1;
+    }
+
+} 
+
+
+@media(max-width: 44em){
+
+    .container{
+        max-width: 70rem;
+    }
+
+
+    .grid--2--cols,
+    .grid--4--cols{
+        grid-template-columns: 1fr;
+    }
+
+    .service-img{
+        width: 60%;
+    }
+
+    .service-img-box::before{
+        width: 60%;
+        padding-bottom: 60%;
+    }
+
+    
+    
+    .services-title-container{
+        margin-left: 20px;
+    }
+     .img-box-2{
+        grid-column: 1/3;
+    }
+
+    .text-box-3{
+    grid-row: 2;
+    grid-column: 1/3;
+    text-align: center;
+    }
+
+    .text-box-3 .service-text{
+        padding-left: 10px;
+        margin-right: 33px;
+    }
+
+
+    .design-box{
+        grid-row: 4;
+        text-align: center;
+    }
+
+    .design-box .service-text{
+        padding-left: 10px;
+    }
+
+
+    .design-img{
+    grid-row: 3;
+    grid-column: 1/3;
+    }
+    
+    .portfolio-items{
+        justify-content: center;
+    }
+
+
+    textarea{
+        max-width: 457px;
+    }
+
+    .portfolio-title{
+        margin-left: 20px;
+    }
+
+
+}
+
+@media(max-width: 24em){
+    .textarea textarea{
+        max-width:240px;
+    }
+
+    .btn-send{
+        left: 60px;
+    }
+}

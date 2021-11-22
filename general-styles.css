@@ -1,0 +1,85 @@
+/* 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* Font Families:
+
+heading-primary: font-family: 'Roboto', sans-serif;
+
+heading-secondary: font-family: 'Space Grotesk', sans-serif;
+
+/* COLOR SYSTEM */
+
+/* 
+main color: #3366BB
+
+Shades: #2e5ca8
+
+Tints: #5f55be
+*/
+/* 
+
+Grey: #555
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+    
+    /* does not work on safari or MS Edge */
+    scroll-behavior: smooth;
+}
+
+body {
+  margin:0;
+  font-family: 'Rubik', sans-serif;
+  overflow-x:hidden;
+  /* overflow-y: hidden; */
+  background-image:linear-gradient(to top, rgb(245, 245, 245)0%, #fff 100%);
+}
+
+.container{
+    max-width: 128rem;
+    margin: 0 auto;
+    /* padding: 0 3.2rem; */
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 3.8rem;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4--cols{
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.heading-secondary{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #333;
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+  }
+
+.display-none{
+    display: none;
+}
+
