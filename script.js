@@ -2,9 +2,10 @@
 ///////////////////////////////////////////////////////
 // Typing effect in title
 //////////////////////////////////////////////////////
+
 function typeEffect(element, speed) {
 
-    let text = "Web Developer";
+    let text = "Front-End Developer";
 
     let i = 0;
     let timer = setInterval(() => {
@@ -40,15 +41,7 @@ btnNavEl.addEventListener("click", () => {
 
 
 ///////////////////////////////////////////////////////
-//quick logo
-///////////////////////////////////////////////////////
-
-const logoEl = document.querySelector(".logo");
-const logoName = "<ILDIDEV>";
-logoEl.append(logoName)
-
-///////////////////////////////////////////////////////
-//Smooth scrolling animation
+//Link click event behaviour 
 ///////////////////////////////////////////////////////
 
 const allLinks = document.querySelectorAll('a:link');
@@ -73,10 +66,11 @@ allLinks.forEach((link) => {
     });
 });
 
-const contactBtn = document.querySelector('#cta-btn');
+const contactBtn = document.querySelector('#cta-btn-hero');
 contactBtn.addEventListener("click", ()=>{
     headerEl.classList.toggle("nav-open")
 })
+
 
 ///////////////////////////////////////////////////////
 // Sticky navigation
@@ -86,12 +80,13 @@ const sectionHeroEl = document.querySelector(".section-hero")
 
 const obs = new IntersectionObserver(function (entries) {
     const ent = entries[0];
-    console.log(ent);
     if (!ent.isIntersecting) {
         document.body.classList.add('sticky');
+        document.body.classList.add('box-shadow');
     }
     if (ent.isIntersecting) {
         document.body.classList.remove('sticky');
+        document.body.classList.remove('box-shadow');
     }
 
 
@@ -105,69 +100,98 @@ const obs = new IntersectionObserver(function (entries) {
 obs.observe(sectionHeroEl);
 
 
+///////////////////////////////////////////////////////
+// Modals
+///////////////////////////////////////////////////////
+
+let item1Modal = document.querySelector('.item-1');
+let item1Modal2 = document.querySelector('.item-2');
+let textBox1 = document.querySelector('.textbox');
+let textBox2 = document.querySelector('.textbox-2');
+
+let modalBg = document.querySelector('.modal-bg');
+let modalBg2 = document.querySelector('.modal-bg-2');
+
+let modalBtn = document.querySelector('.modal-btn');
+let modalBtn2 = document.querySelector('.modal-btn-2');
+
+item1Modal.addEventListener('click', ()=>{
+    modalBg.classList.add('bg-active');
+})
+
+textBox1.addEventListener('click', ()=>{
+    modalBg.classList.add('bg-active');
+})
+
+textBox2.addEventListener('click', ()=>{
+    modalBg2.classList.add('bg-active');
+})
+item1Modal2.addEventListener('click', ()=>{
+    modalBg2.classList.add('bg-active');
+})
+
+modalBtn.addEventListener('click', () => {
+    modalBg.classList.remove('bg-active');
+})
+modalBtn2.addEventListener('click', () => {
+    modalBg2.classList.remove('bg-active');
+})
+
 // making contact button in nav dissapear at bottom of screen
 
-const sectionFooter = document.querySelector(".footer")
-const ctaBtn = document.querySelector("#cta-btn")
+const sectionContact = document.querySelector(".contact-section")
+const ctaBtn = document.querySelector("#cta-btn-hero")
 
-const obs2 = new IntersectionObserver(function (entries){
+const obs2 = new IntersectionObserver( (entries) =>{
     const ent = entries[0];
-    console.log(ent);
     if(ent.isIntersecting){
         ctaBtn.classList.add('display-none')
     }
     if(!ent.isIntersecting){
         ctaBtn.classList.remove('display-none')
     }
-})
 
-obs2.observe(sectionFooter);
+    
+},
+{
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: '-350px'
+}
+)
 
+obs2.observe(sectionContact);
 
-///////////////////////////////////////////////////////
-// Opening and closing modals for portfolio items
-///////////////////////////////////////////////////////
+// Making sticky header disappear when intersecting with footer
 
-//for each statement is required to make this code a lot cleaner
+const sectionFooter = document.querySelector('.footer');
+const header = document.querySelector('.header');
 
-let modal = document.querySelector(".modal-bg");
+const obs3 = new IntersectionObserver((entries) => {
+    const ent = entries[0];
+    if(ent.isIntersecting){
+        header.classList.add('display-none');
+    }
+    if(!ent.isIntersecting){
+        header.classList.remove('display-none')
+    }
+},
+{
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: '-100px'
+}
+)
 
-let openModal_1 = document.querySelector(".modalOpen-1");
-let openModal_2 = document.querySelector(".modalOpen-2");
-let openModal_3 = document.querySelector(".modalOpen-3");
-let openModal_4 = document.querySelector(".modalOpen-4");
-
-//item 1
-openModal_1.addEventListener("click", () => {
-    modal.classList.add("display-modal")
-});
-
-//item 2
-openModal_2.addEventListener("click", () => {
-    modal.classList.add("display-modal")
-});
-
-//item 3
-openModal_3.addEventListener("click", () => {
-    modal.classList.add("display-modal")
-});
-
-//item 4
-openModal_4.addEventListener("click", () => {
-    modal.classList.add("display-modal")
-});
-
-let closeModal = document.querySelector(".modal-close");
-
-closeModal.addEventListener("click", () => {
-    modal.classList.remove("display-modal")
-})
-
+obs3.observe(sectionFooter);
 
 
 ///////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 ///////////////////////////////////////////////////////
+
 function checkFlexGap() {
     var flex = document.createElement("div");
     flex.style.display = "flex";
@@ -180,7 +204,6 @@ function checkFlexGap() {
     document.body.appendChild(flex);
     var isSupported = flex.scrollHeight === 1;
     flex.parentNode.removeChild(flex);
-    console.log(isSupported);
 
     if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }

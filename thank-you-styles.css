@@ -1,0 +1,49 @@
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1B7EE4;
+}
+.thank-you-section{
+    background-color:#1B7EE4;
+    background-image: linear-gradient(#1b7fe4f5, #1b7fe4ee), url('img/Contact\ BG\ SVG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-title{
+    font-family: 'Roboto', 'sans-serif';
+    color: #eee;
+    text-align: center;
+    padding-top: 4.8rem;
+    font-size: 48px;
+}
+
+.thank-you-text{
+    color: #eee;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 2.4rem;
+    font-size: 20px;
+}
+
+.thank-you-link:link,
+.thank-you-link:visited{
+ 
+    color: #eee;
+    font-size: 20px;
+    font-family: "Montserrat";
+    margin-top: 1.2rem;
+    transition: all 150ms ease-in-out;
+}
+
+.thank-you-link:hover{
+    text-shadow: 0px 0px 3px #38f2ff9d;
+}

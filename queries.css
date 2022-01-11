@@ -5,44 +5,20 @@ Instead, 1rem = 1em = 16px
 /* ************ */
 /* Below 1600px (smaller desktops) */
 /* ************ */
-@media (max-width: 100em){
 
-    .container{
-        max-width: 120rem;
+@media(max-width:96em){
+
+    .hero-img{
+        justify-content: center;
     }
-    
-    textarea{
-        max-width:734px;
-    }
-
-
 }
-
-
 /* Below 1296px */
 @media(max-width: 81em){
-    .container{
-        max-width: 105rem;
-    }
-
-    .portfolio-items{
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-    }
-
-    .hero-intro{
-        margin-bottom: 1.8rem;
-    }
 
     .service-text-box{
         padding-right: 1.4rem;
     }
 
-    .cta-form{
-        grid-template-columns: 1fr;
-    }
     .email-div{
         grid-row: 2;
     }
@@ -51,12 +27,65 @@ Instead, 1rem = 1em = 16px
         top: 70%;
     }
 
-    textarea{
-        max-width:549px;
+    .service-img-box-2::before{
+        left: 178px;
     }
 
-    
+    .service-img-box::before{
+        bottom: 118px;
+        left: 34px;
+    }
 
+
+
+}
+
+@media(max-width:77em){
+    .hero-paragraph{
+        font-size: 14px;
+    }
+
+    .hero-intro{
+        font-size: 48px ;
+    }
+
+    .service-text{
+        font-size: 18px;
+    }
+
+    .heading-secondary{
+        font-size: 30px;
+    }
+
+    .services-title,
+    .skills-title,
+    .portfolio-title{
+        font-size: 52px;
+    }
+
+    .line, .line-2, .line-3{
+        height: 4px;
+    }
+
+    .line{
+        width:247px;
+    }
+
+    .line-2{
+        width: 182px;
+    }
+     .line-3{
+         width: 167px ;
+     }
+
+    .services-title-container-inner::before,
+    .skills-title-container-inner::before,
+    .portfolio-title-container-inner::before{
+        width: 111px;
+        height: 30px;
+   
+    }
+    
 }
 
 @media(max-width:69em){
@@ -66,7 +95,35 @@ Instead, 1rem = 1em = 16px
         
     }
 
+    .header{
+        padding: 0 2.4rem;
+    }
+
+    .hero-img{
+        padding-right: 0;
+    }
+
+    .service-img-box-2::before{
+        left: 145px;
+    }
+
+    .service-img-box::before{
+        bottom: 100px;
+    }
+
+    .service-text{
+        font-size: 16px;
+    }
+
+    .service-divs{
+        column-gap: 4.8rem;
+    }
+
+
+    /* ***************** */
     /* MOBILE NAVIGATION */
+    /* ***************** */
+
     .btn-mobile-nav{
         display: block;
         z-index: 10001;
@@ -74,37 +131,24 @@ Instead, 1rem = 1em = 16px
 
 
     .main-nav{
-        /* background-color: #3b3b99e5; */
-        background-color:rgba(20, 83, 150, 0.959) ;
+        background: linear-gradient(to bottom,#33A2FF 0%, #0c69b6 100% ) ;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        
         position:absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
 
-        /* slide from left */
         transform: translateX(100%);
-
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.2s ease-in;
-
-        /* Hide navigation */
-        /* allows no transitions
-        display: none; */
-
-        /* 1) Hide it visually */
         opacity: 0;
-
-        /* 2) Make it unaccessible to mouse and keyboard  */
         pointer-events: none;
-
-        /* 3) Hide it from screen readers */
         visibility: hidden;
-        /* display: none; */
 
         
     }
@@ -128,11 +172,7 @@ Instead, 1rem = 1em = 16px
     .main-nav-link:visited{
         font-size: 3rem;
         color: white;
-    }
-
-    #cta-btn{
-        color: white;
-        font-size: 1.8rem;
+        font-family: 'Roboto';
     }
 
     .nav-open .main-nav-list,
@@ -156,135 +196,707 @@ Instead, 1rem = 1em = 16px
 
       }
 
-    .cta {
-        grid-template-columns: 1fr;
+      #cta-btn-hero{
+          display: block;
+      }
+
+      #hero-cta-link{
+          text-decoration: none;
+      }
+
+      /* skills grid */
+
+      .skills-list{
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+}
+
+@media(max-width:64em){
+
+    .ildidev-logo-2{
+        width: 20%;
+    }
+    .inner-header{
+        height: 50vh;
+    }
+    .section-hero{
+        margin-bottom: 0;
     }
 
-    .cta-img-box{
-        height: 32rem;
-        grid-row: 1;
+    .service-divs{
+        column-gap: 0;
     }
 
+    .header-container{
+        padding-top: 256px;
+    }
 
-    .section-cta{
-        width: 90%;
-        margin: 0 auto;
+    .hero-img{
+        margin-bottom: 96px;
     }
 }
- 
- @media(max-width:48em){
-    html {
-        font-size: 9px;
+
+/* ipad */
+
+@media(max-width:64em) and (max-height:48em){
+    .inner-header{
+        height: 70vh;
     }
 
-    .container{
-        max-width: 80rem;
+    .ildidev-logo-2{
+        width:25%;
+    }
+}
+
+/* nest hub */
+@media(max-width:64em) and (max-height:37.5em){
+    .inner-header{
+        height: 100vh;
+    }
+}
+
+@media(max-width:56em){
+    .service-img-2{
+        width: 75%;
+    }
+
+    .hero-intro{
+        font-size: 46px;
+    }
+
+    .cta-email, .cta-link{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:48em){
+    .inner-header{
+        height: 70vh;
+    }
+
+    .hero-img img{
+        width: 200%;
+        margin-right: 210px;
+    }
+
+    .header-container{
+        padding-left: 85px;
+        padding-top: 175px;
+    }
+
+    .name-profession-wrapper{
+        width: 115%;
+        z-index: 100;
+    }
+
+    .service-divs{
+        grid-template-columns: 1fr;
+        grid-template-rows:
+            1fr .25fr 1fr .25fr
+    }
+
+    .img-box-1{
+        grid-column: span 2;
+    }
+
+    #service-text-box-1{
+        grid-column: span 2;
+        text-align: center;
+        padding-left: 4.6rem;
+    }
+
+    .service-img-box-2{
+        grid-column: span 2;
+        grid-row: 3;
+        margin-bottom: 24px;
     }
 
     .service-text-box{
-        padding-right: 1.4rem;
+        text-align: center;
+        padding-right: 4.6rem;
+        
     }
 
-    .portfolio-items{
-        justify-items: center;
+    #service-img{
+        width: 75%;
     }
 
-    textarea{
-        max-width: 585px;
+    .service-img-box::before{
+        width: 50%;
+        padding-bottom: 50%;
+        bottom: 133px;
+        left: 142px;
     }
 
-
-    .cta {
-        grid-template-columns: 1fr;
+    .service-img-box{
+        padding-bottom: 0;
+        margin-bottom: 2.4rem;
     }
 
-    .cta-img-box{
-        height: 32rem;
-        grid-row: 1;
+    .line{
+        margin-bottom: 9.6rem;
+    }
+
+    .service-img-box-2{
+        margin-bottom: 2.4rem;
+    }
+    .service-img-box-2::before{
+        width: 50%;
+        padding-bottom: 50%;
+        left: 211px;
+    }
+
+    .service-img-2{
+        margin-top: 71px;
+        width: 60%;
+        margin-right: 52px;
+        
+    }
+
+    .see-more{
+        margin: 0 auto;
+    }
+
+    .text-box-3{
+        margin-top: -96px;
+    }
+
+    .heading-secondary{
+        margin-bottom: 2.4rem;
+    }
+
+    .skill{
+        width: 85%;
     }
 
 } 
 
-
-@media(max-width: 44em){
-
-    .container{
-        max-width: 70rem;
+@media(max-width:44em){
+    .name-profession{
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    .name-profession-wrapper{
+        width: 90%;
+        padding-right: 2.4rem;
     }
 
+    .hero-img{
+        display: none;
+    }
 
-    .grid--2--cols,
-    .grid--4--cols{
+    .hero-btns{
+        justify-content: center;
+    }
+
+    .hero-paragraph{
+        text-align: center;
+    }
+
+    .hero-intro{
+        text-align: center;
+    }
+
+    .hero-job-title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-items{
         grid-template-columns: 1fr;
+        row-gap: 4.8rem;
     }
 
-    .service-img{
-        width: 60%;
+    .cta-title{
+        font-size: 30px;
+    }
+
+    .cta-paragraph{
+        font-size: 14px;
+    }
+
+    .portfolio-items{
+        padding: 2.4rem;
+    }
+
+    .skills-list{
+        padding: 2.4rem;
+    }
+
+
+}
+
+
+
+@media(max-width:39em){
+    .service-img-box-2::before{
+        left: 163px;
     }
 
     .service-img-box::before{
+        left: 124px;
+        bottom: 100px;
+    }
+
+    #services{
+        margin-top: -96px;
+    }
+
+    .service-img-box{
+        margin-bottom: 4.6rem;
+    }
+
+    .ildidev-logo-2{
+        margin-bottom: 2.4rem;
+        width: 30%;
+
+    }
+
+
+
+}
+
+@media(max-width:32em){
+    .inner-header{
+        height: 80vh;
+    }
+
+    .hero-intro{
+        font-size: 36px;
+    }
+    .hero-job-title-text{
+        font-size: 20px;
+    }
+
+    .hero-paragraph{
+        font-size: 12px;
+    }
+
+    .btn-3 span{
+        font-size: 10px;
+        top: -18%;
+    }
+
+    .custom-btn{
+        width: 112px;
+        height:30px;
+    }
+
+    .name-profession-wrapper{
+        padding-right: 4.6rem;
+    }
+
+    .service-text{
+        font-size: 16px;
+    }
+
+    .projects-cta{
+        font-size: 16px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .service-img-box-2::before{
+        left: 130px;
+    }
+    .service-img-box-2::before{
+        left: 129px;
+        bottom: 71px;
+    }
+
+    .service-img-box{
+        margin-bottom: 8rem;
+    }
+
+    .heading-secondary{
+        font-size: 24px;
+    }
+
+    .service-img-box::before{
+        left: 104px;
+        bottom: 65px;
+    }
+
+    .services-title,
+    .skills-title,
+    .portfolio-title{
+        font-size: 44px;
+    }
+
+    .skill{
+        height: 130%;
+    }
+
+    .skill-text{
+        font-size: 20px;
+    }
+
+    .line-3, .line-2, .line{
+        margin-bottom: 9.6rem;
+    }
+    .line{
+        width: 220px;
+    }
+
+    .services-title-container-inner::before{
+        width: 89px;
+        height: 26px;
+    }
+    .skills-title-container-inner::before{
+        width: 97px;
+        height: 28px;
+    }
+    .portfolio-title-container-inner::before{
+        width: 94px;
+        height: 26px;
+    }
+    
+
+    .line-2{
+        width: 155px;
+    }
+
+    .line-3{
+        width: 144px;
+    }
+
+    #name{
+        width: 83%;
+    }
+
+    #email{
+        width: 95%;
+    }
+
+    #message{
+        width: 98%;
+    }
+
+    .contact-form.grid.grid--2--cols{
+        column-gap: 0;
+        padding-left: 2.4rem;
+    }
+
+    .cta-btn-2{
+        height: 64px;
+        margin-top: 10px;
+    }
+
+    .outlook{
+        padding-left: 0;
+    }
+
+    .btn-mobile-nav{
+        margin-right: 0;
+    }
+
+    .skills-list, .portfolio-items{
+        padding: 24px;
+    }
+
+    #input-1, #input-2{
+        margin-bottom: 0;
+    }
+
+    #projects{
+        margin-bottom: 4.6rem;
+    }
+
+    .cta-title{
+        font-size: 24px;
+    }
+
+    .legal p{
+        font-size: 10px;
+    }
+
+
+    .footer-navigation, .footer-socials{
+        transform: scale(0.8);
+    }
+
+    .footer-socials{
+        margin-top: 3rem;
+    }
+
+
+
+}
+
+@media(max-width:28em){
+
+    
+    .legal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .name-profession-wrapper{
+        width: 100%;
+        padding-right: 0px;
+        margin-left: -46px;
+    }
+    .service-img-box-2::before{
+        left: 113px;
+        bottom: 49px;
+    }
+
+
+    .contact-form.grid.grid--2--cols{
+        padding-left: 1.2rem;
+    }
+
+    .legal{
+        padding-left: 2.4rem;
+        align-items: left;
+    }
+
+    .social-title, .footer-nav-title{
+        font-size: 12px;
+    }
+
+    .footer-socials{
+        margin-top: 2.6rem;
+    }
+
+
+}
+
+@media(max-width:25em){
+    .skills-list{
+        grid-template-columns: 1fr;
+    }
+
+    .skill{
+        width: 70%;
+    }
+
+    .service-img-box::before{
+        left: 85px;
+        bottom: 48px;
+    }
+
+    .service-img-box-2::before{
+        left: 98px;
+        bottom: 45px;
+    }
+
+    .services-title, .skills-title, .portfolio-title{
+        font-size: 36px;
+    }
+
+    .services-title-container-inner::before{
+        width: 78px;
+        height: 22px;
+    }
+
+    .portfolio-title-container-inner::before{
+        width: 78px;
+        height: 21px;
+    }
+
+    .line-3{
+        width: 122px;
+    }
+
+    
+    .line{
+        width: 181px;
+        margin-bottom: 8rem;
+    }
+
+    .skills-title-container-inner::before{
+        width: 81px;
+        height: 23px;
+    }
+
+    .line-2{
+        width: 130px;
+    }
+
+    #services{
+        margin-bottom: 12.8rem;
+    }
+
+    .skills-section.container{
+        margin-bottom: 18.4rem;
+    }
+
+
+    .cta-btn-2{
+        width: 194px;
+    }
+
+    .cta-paragraph{
+        font-size: 12px;
+    }
+
+    ::placeholder{
+        font-size: 12px;
+    }
+
+    .service-img-box{
+        margin-bottom: 9.6rem;
+    }
+
+    .skills-section.container{
+        margin-bottom: 12.8rem;
+    }
+
+    .line-3, .line-2, .line{
+        margin-bottom: 4.6rem;
+    }
+
+    #service-text-box-1{
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+    #service-text-box-2{
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    .legal{
+        padding-right: 2.4rem;
+        padding-left: 1.2rem;
+    }
+
+    .ildidev-logo-2{
+        width: 35%;
+    }
+
+}
+
+@media(max-width:23em){
+    #services{
+        margin-top:-258px ;
+    }
+
+    .service-img-2{
+        margin-right: 30px;
+    }
+
+    .item{
+        height: 300px;
+    }
+
+    .hero-intro{
+        font-size: 30px;
+    }
+
+    .hero-job-title-text{
+        font-size: 18px;
+    }
+
+    .custom-btn{
+        width: 96px;
+    }
+
+    .name-profession-wrapper{
+        width: 124%;
+        margin-left: -77px;
+    }
+
+    .ildidev-logo-2{
+        width: 40%;
+    }
+
+
+}
+
+@media(max-width:20em){
+    #service-img{
+        width: 100%;
+    }
+
+    .service-img-box::before{
+        left: 51px;
+        bottom: 54px;
         width: 60%;
         padding-bottom: 60%;
     }
 
-    
-    
-    .services-title-container{
-        margin-left: 20px;
-    }
-     .img-box-2{
-        grid-column: 1/3;
+    .service-img-2{
+        width: 80%;
     }
 
-    .text-box-3{
-    grid-row: 2;
-    grid-column: 1/3;
-    text-align: center;
+    .service-img-box-2::before{
+        left: 74px;
+        bottom: 59px;
+        width: 60%;
+        padding-bottom: 60%;
     }
 
-    .text-box-3 .service-text{
-        padding-left: 10px;
-        margin-right: 33px;
+    .cta-btn-2{
+        width: 148px;
+        height: 51px;
+        font-size: 16px;
     }
 
-
-    .design-box{
-        grid-row: 4;
-        text-align: center;
+    .cta-email, .cta-link{
+        font-size: 10px;
+        margin-left: 1.2rem;
     }
 
-    .design-box .service-text{
-        padding-left: 10px;
+    .name-profession-wrapper{
+        margin-left: -70px;
     }
 
-
-    .design-img{
-    grid-row: 3;
-    grid-column: 1/3;
-    }
-    
-    .portfolio-items{
-        justify-content: center;
+    #email, #name{
+        height: 36px;
     }
 
-
-    textarea{
-        max-width: 457px;
+    .ildidev-logo-2{
+        width: 45%;
     }
 
-    .portfolio-title{
-        margin-left: 20px;
-    }
-
-
-}
-
-@media(max-width: 24em){
-    .textarea textarea{
-        max-width:240px;
-    }
-
-    .btn-send{
-        left: 60px;
+    .legal{
+        margin-top: 2.4rem;
     }
 }
+
+@media(max-width:18em){
+    .inner-header{
+        padding-top: 48px;
+    }
+
+    .custom-btn{
+        width: 80px;
+    }
+
+    .item{
+        height: 216px;
+    }
+
+    .skills-list{
+        padding: 0;
+    }
+
+    .cta-btn-2{
+        width: 123px;
+    }
+
+    ::placeholder{
+        color: transparent;
+    }
+
+    .ildidev-logo-2{
+        width: 55%;
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
