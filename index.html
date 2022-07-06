@@ -1,275 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A full-stack web development and design house">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="general-styles.css">
-    <link rel="stylesheet" href="queries.css">
-    <link rel="stylesheet" href="modal-queries.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/general-styles.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/queries.css" />
     <title>IldiDev &mdash; Web Development & Design</title>
-</head>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo-link">
+        <img src="/assets/header-logo.png" class="logo" alt="ILDIDEV®" />
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-links-text"><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li class="nav-links-text"><a href="#services" class="mobile-nav-link">Services</a></li>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/ildi-dvorani-a04452210/"
+              target="_blank"
+            >
+              <img
+                src="/assets/logo-linkedin.svg"
+                class="linkedin-icon social-icon"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://github.com/dvoranii"
+              target="_blank"
+            >
+              <img
+                src="/assets/logo-github.svg"
+                class="github-icon social-icon"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://codepen.io/dvoranii"
+              target="_blank"
+            >
+              <img
+                src="/assets/logo-codepen.svg"
+                class="codepen-icon social-icon"
+                alt=""
+              />
+            </a>
+          </div>
 
-<body>
+          <li>
+            <a class="nav-link" id="nav-services" href="#services">Services</a>
+          </li>
+          <li>
+            <a class="nav-link" id="nav-portfolio" href="#projects"
+              >Portfolio</a
+            >
+          </li>
+          <li class="hero-btn-list-item">
+            <a id="hero-cta-link" href="#contact"
+              ><button id="cta-btn-hero"><span>Connect</span></button></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-    <header class="header">
-        <a href="#" class="logo-link">
-            <!-- <h2 class="logo"></h2> -->
-            <img class="logo" src="img/Asset 5.png" alt="">
-        </a>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ildi-dvorani-a04452210/"
-                        onclick="window.open(this.href,'_blank')">
-                        <ion-icon class="linkedin-icon" name="logo-linkedin"></ion-icon>
-                    </a>
-                    <a href="https://github.com/dvoranii" onclick="window.open(this.href,'_blank')">
-                        <img class="github-icon" src="img/githublogo2.png" alt="" />
-                    </a>
-                    <a href="https://codepen.io/dvoranii" onclick="window.open(this.href,'_blank')">
-                        <ion-icon class="codepen-icon" name="logo-codepen"></ion-icon>
-                    </a>
+      <button class="btn-mobile-nav">
+        <div class="burger-btn" name="open-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
 
-                </div>
-
-                <li><a class="main-nav-link" id="nav-services" href="#services">Services</a></li>
-                <li><a class="main-nav-link" id="nav-portfolio" href="#projects">Portfolio</a></li>
-                <li><a id="hero-cta-link" href="#cta"><button id="cta-btn-hero"><span>Connect</span></button></a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <button class="btn-mobile-nav">
-            <div class="burger-btn" name="open-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
-            <div class="x-btn" name="close-menu">
-                <div class="x-line1"></div>
-                <div class="x-line2"></div>
-            </div>
-        </button>
-
+        <div class="x-btn" name="close-menu">
+          <div class="x-line1"></div>
+          <div class="x-line2"></div>
+        </div>
+      </button>
     </header>
 
-    <section class="section-hero">
-        <div class="hero">
-
-            <!--Content before waves-->
-
-            <div class="inner-header flex">
-
-                <div class="header-container grid grid--2--cols container">
-
-                    <div class="name-profession">
-                        <div class="name-profession-wrapper">
-                            <h1 class="hero-intro">I'm Ildi Dvorani</h1>
-
-                            <div class="hero-job-title">
-                                <span class="hero-job-title-text">&nbsp;</span>
-                            </div>
-
-                            <p class="hero-paragraph">
-                                Welcome to my portfolio website. If you enjoy your user experience, be sure to check out this site's 
-                                <a 
-                                class="hero-link"
-                                href="https://www.figma.com/file/LkeTEUFRxx2N3XbVw7KedA/IlDIDEV?node-id=0%3A1" 
-                                onclick="window.open(this.href,'_blank')"> wireframes</a>
-                                 and <a href="https://github.com/dvoranii/MyNewPortfolioSite" onclick="window.open(this.href,'_blank')" class="hero-link">source code</a>
-                            </p>
-
-                            <div class="hero-btns">
-                                <a href="#projects"><button class="custom-btn btn-3" id="projects-btn"><span>Projects</span></button></a>
-                                <a href="#services"><button class="custom-btn btn-3" id="services-btn"><span>Services</span></button></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="hero-img">
-                        <img src="img/Laptop Header.svg" alt="">
-                    </div>
-
-                </div>
-
+    <section class="hero-section">
+      <div class="hero container">
+        <div class="hero-inner grid" id="hero-grid">
+          <div class="intro-text">
+            <h1>Ildi&nbsp;Dvorani</h1>
+            <div class="hero-job-title">
+              <span class="hero-job-title-text">&nbsp;</span>
             </div>
+            <p>
+              Welcome to my portfolio website. Be sure to also check out this site's
+              <a
+                class="hero-link"
+                href="https://www.figma.com/file/LkeTEUFRxx2N3XbVw7KedA/IlDIDEV?node-id=0%3A1"
+                >wireframes</a
+              >
+              and <a href="" class="hero-link">repository</a>.
+            </p>
 
-
-            <!--Waves Container-->
-            <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#FCFCFC" />
-                    </g>
-                </svg>
+            <div class="hero-btns">
+              <a href="#projects"
+                ><button class="custom-btn btn-3" id="projects-btn">
+                  <span>Projects</span>
+                </button></a
+              >
+              <a href="#services"
+                ><button class="custom-btn btn-3" id="services-btn">
+                  <span>Services</span>
+                </button></a
+              >
             </div>
-            <!--Waves end-->
-
+          </div>
+          <div class="laptop-img">
+            <img src="/assets/Laptop Header.svg" alt="" />
+          </div>
         </div>
+      </div>
+
+      <!--Waves Container-->
+      <div class="waves-container">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#FCFCFC" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
     </section>
-    <!--Header ends-->
-
-
-    <!-- ------------ -->
-    <!--SERVICES SECTION-->
-    <!-- ------------ -->
 
     <section class="container-2 section--services grid" id="services">
-        <div class="services-title-container">
-            <div class="services-title-container-inner">
-                <h2 class="services-title">My Services</h2>
-            </div>
 
+        <!-- <img src="/assets/modal-img/dot.svg"> -->
+        <div class="background-anim-bar"></div>
+      <div class="services-title-container">
+        <div class="services-title-container-inner">
+          <h2 class="services-title">My Services</h2>
+        </div>
+      </div>
+      <div class="line">&nbsp;</div>
+
+      <div class="grid grid--2-cols service-divs">
+        <div class="service-img-container img-container-1">
+          <img id="service-img" src="/assets/Develompent SVG.svg" alt="" />
         </div>
 
+        <!-- development -->
+        <div class="service-text-box text-box-2" id="service-text-box-1">
+          <h3 class="heading-tertiary">Development</h3>
+          <p class="service-text" id="service-text-1">
+            I enjoy bringing UI/UX designs to life using the necessary front-end
+            technologies while writing clean and maintainble code for optimal
+            performance and scalability.
+          </p>
 
-        <div class="line">&nbsp;</div>
-
-        <div class=" grid grid--2--cols service-divs">
-
-            <!-- Development -->
-
-            <div class="service-img-box img-box-1">
-
-                <img id="service-img" src="img/Develompent SVG.svg" alt="Development picture" />
-
-            </div>
-
-            <div class="service-text-box text-box-3" id="service-text-box-1">
-                <h2 class="heading-secondary">Development</h2>
-                <p class="service-text" id="service-text-1" >
-
-                    I enjoy bringing UI/UX designs to life using the necessary front-end technologies, as well as
-                     writing clean and maintainble code for optimal performance and scalability. 
-                    
-                </p>
-
-                <div class="see-more">
-                    <span class="dash">&nbsp;</span>
-                    <a class="see-more-link" href="#projects">See more</a>
-                </div>
-            </div>
-
-            <!-- Design -->
-
-            <div class="service-text-box design-box" id="service-text-box-2">
-                <h2 class="heading-secondary">Design</h2>
-                <p class="service-text" id="service-text-2">
-                     I like to build wireframes that will translate into attractive and sensible interfaces for a favourable user experience.
-                </p>
-
-                <div class="see-more">
-                    <span class="dash">&nbsp;</span>
-                    <a class="see-more-link" href="#projects">See more</a>
-                </div>
-            </div>
-            <div class="service-img-box-2 img-box-2">
-                <img class="service-img-2" src="img/Web Design SVG.svg" alt="Development picture" />
-            </div>
+          <div class="see-more">
+            <span class="dash">&nbsp;</span>
+            <a class="see-more-link" href="#projects">See more</a>
+          </div>
         </div>
 
-        <!--Content ends-->
+        <!-- design -->
+        <div class="service-img-container img-container-2">
+            <img id="service-img2" src="/assets/Web Design SVG.svg" alt="" />
+          </div>
+  
+          <!-- development -->
+          <div class="service-text-box text-box-3" id="service-text-box-2">
+            <h3 class="heading-tertiary">Design</h3>
+            <p class="service-text" id="service-text-1">
+                I like to build wireframes that will translate into attractive and sensible interfaces for a favourable user experience.
+            </p>
+  
+            <div class="see-more">
+              <span class="dash">&nbsp;</span>
+              <a class="see-more-link" href="#projects">See more</a>
+            </div>
+          </div>
 
+    </div>
+      </div>
     </section>
-
-    <!-- ------------- -->
-    <!-- SKILLS SECTION -->
-    <!-- ------------- -->
-
     <section class="skills-section container">
+        <div class="skills-wrapper">
 
-        <div class="skills-title-container">
-            <div class="skills-title-container-inner">
-                <h2 class="skills-title">My Skills</h2>
+        
+        <div class="services-title-container">
+            <div class="services-title-container-inner2">
+              <h2 class="services-title">My Skills</h2>
             </div>
         </div>
-        <div class="line-2">&nbsp;</div>
-        <div class="skills-list grid grid--3--cols">
+          <div class="line" id="line2">&nbsp;</div>
+
+          <div class="skills-list grid grid--3--cols">
 
             <div 
             class="skill"
             fade
             >
-                <img class="js-logo" src="img/skills-img/javascript-logo.webp" alt="">
-                <p class="skill-text js-text">Javascript</p>
+            <p class="skill-text js-text">Javascript</p>
+                <img class="js-logo" src="assets/modal-img/javascript-logo-yellow.jpg" alt="">
+                
+                <p class="skill-description">Writing clean and maintainable javascript to bring functionality to web applications.</p>
 
             </div>
             <div class="skill"
             class="skill"
             >
-                <img class="css-logo" src="img/skills-img/css-logo.webp" alt="">
-                <p class="skill-text">CSS3</p>
+            <p class="skill-text">CSS3</p>
+                <img class="css-logo" src="/assets/skills-img/css-logo.webp" alt="">
+                
+                <p class="skill-description">Utilizing CSS and CSS preprocessors like SCSS and SASS to implement interface designs and help minimize the use of javascript to help with performance.</p>
             </div>
             <div class="skill"
             >
-                <img class="html-logo" src="img/skills-img//html-logo.webp" alt="">
-                <p class="skill-text">HTML5</p>
+            <p class="skill-text">HTML5</p>
+                <img class="html-logo" src="assets/skills-img//html-logo.webp" alt="">
+                
+                <p class="skill-description">Writing well-structured, SEO favourable and AODA compliant HTML markup for websites, web applications, HTML Emails and more.</p>
             </div>
 
             <div class="skill">
-                <img class="angular-logo" src="img/skills-img/AngularJS-Shield.svg" alt="">
                 <p class="skill-text">Angular</p>
+                <img class="angular-logo" src="assets/skills-img/AngularJS-Shield.svg" alt="">
+                
+                <p class="skill-description">Using Angular 2+ with typescript to create full-stack web applications using the MVVM design pattern.</p>
             </div>
             <div class="skill">
-                <img class="aws-logo" src="img/skills-img/Amazon-Web-Services-AWS-Logo.png" alt="">
                 <p class="skill-text aws-text">AWS</p>
+                <img class="aws-logo" src="assets/skills-img/Amazon-Web-Services-AWS-Logo.png" alt="">
+                
+                <p class="skill-description">Deploying web applications and privisioning the apporpriate server infrastrcture for each particular use case.</p>
             </div>
+
             <div class="skill">
-                <img class="ps-logo" src="img/skills-img/Adobe-Photoshop-Logo.png" alt="">
                 <p class="skill-text">Photoshop</p>
+                <img class="ps-logo" src="assets/skills-img/Adobe-Photoshop-Logo.png" alt="">
+                
+                <p class="skill-description">Several years of experience editing web assets and creating design wireframes using Adobe Photoshop and Illustrator.</p>
+            </div>
+
+            <div class="skill">
+                <p class="skill-text">Node JS</p>
+                <img class="node-logo" src="assets/skills-img/node.png" alt="">
+                
+                <p class="skill-description">Using Node JS to spin up non-blocking, event-driven servers for full-stack applications.</p>
+            </div>
+
+            <div class="skill">
+                <p class="skill-text">PHP</p>
+                <img class="php-logo" src="assets/skills-img/php.png" alt="">
+                
+                <p class="skill-description">Using PHP to create custom Wordpress plug-ins and themes built from scratch.</p>
+            </div>
+
+            <div class="skill">
+                <p class="skill-text">Wordpress</p>
+                <img class="wp-logo" src="assets/skills-img/Wordpress_Blue_logo.png" alt="">
+                
+                <p class="skill-description">Using Wordpress and other Content Management Systems to create simple websites quickly and efficiently. </p>
             </div>
 
         </div>
+    </div>
     </section>
 
-    <!-- ---------------- -->
-    <!-- PORTFOLIO SECTION -->
-    <!-- ---------------- -->
-
+    <!-- portfolio -->
     <section id="projects" class="portfolio-section">
-        <div class="portfolio-title-container">
-            <div class="portfolio-title-container-inner">
-                <h2 class="portfolio-title">Projects</h2>
+        <div class="services-title-container">
+            <div class="services-title-container-inner3">
+              <h2 class="services-title">Projects</h2>
             </div>
+            
         </div>
-        <div class="line-3">&nbsp;</div>
-        <p class="paragraph projects-cta">Click on any of the thumbnails to view project details </p>
+        <div class="line" id="line3">&nbsp;</div>
+        <p id="projects-cta">Click on any of the thumbnails to view project details </p>
 
         <div class="portfolio-items grid grid--2--cols container">
 
             <div class="image-box">
                 <div class="item item-1"></div>
-                <div class="textbox">
+                <div class="textbox textbox-1">
                     <h2>Recording Studio Website</h2>
                 </div>
 
             </div>
             
-            <div class="image-box-2">
+            <div class="image-box image-box-2">
                 <div class="item item-2"></div>
-                <div class="textbox-2">
+                <div class="textbox textbox-2">
                     <h2>GM Plumbing Website</h2>
                     <p>*Under Construction</p>
                 </div>
@@ -277,189 +334,61 @@
             </div>
             
         </div>
-
-
     </section>
 
-    <!-- --------- -->
-    <!-- MODALS -- -->
-    <!-- --------- -->
+    <!-- MODALS -->
 
     <div class="modal-bg">
         <div class="modal">
-            <h2 class="modal-title">Portfolio Item #1</h2>
-            <div class="modal-line">&nbsp;</div>
-            <div class="modal-content grid">
-
-                <div class="modal-img-wrapper">
-                    <div class="modal-img"></div>
-                </div>
-
-                <div class="modal-info">
-                    <h2 class="modal-info-title">OG Creations Recording Studio Website</h2>
-                    <p class="paragraph modal-paragraph">
-                        A 14 page mobile responsive website including browser animations, testimonial carousel, image gallery, and validated contact forms.
-                        Form submissions are submitted as JSON objects and stored using <a class="modal-link" href="https://firebase.google.com/" onclick="window.open(this.href,'_blank')" title="https://firebase.google.com/"> Google Firebase</a> Realtime Database (NoSQL). The owners are alerted of form submissions 
-                        by email through HTTP POST requests sent to an activated <a class="modal-link" href="https://formspree.io/" onclick="window.open(this.href,'_blank')" title="https://formspree.io/">Formspree</a> form URL.
-                    </p>
-
-                    <div class="tech-icons">
-                        <ul class="tech-icons-list">
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/angular-modal.png" alt="" title="Angular"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/typescript.png" alt="" title="Typescript"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/css-modal.png" alt="" title="CSS3"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/html-modal.png" alt=""   title="HTML5"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/firebase-modal.png" alt=""   title="Google Firebase"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/photoshop-modal.png" alt=""   title="Photoshop"></li>
-
-                        </ul>
-                    </div>
-                    <div class="modal-btns">
-                        
-                            <a href ="https://www.ogcreations.ca/" onclick="window.open(this.href,'_blank')">
-                                <button class="live-demo-btn">
-                                <div class="icon-wrapper">
-                                    <ion-icon class="desktop-icon" name="desktop-outline"></ion-icon>
-                                    <span class="live-demo-text">Live Website</span>
-                                </div>
-                            </button>
-                            </a>
-
-                            <a href="https://github.com/dvoranii/og-creations-website" onclick="window.open(this.href,'_blank')">
-                                <button class="source-code-btn">
-                                    <div class="icon-wrapper">
-                                        <ion-icon class="modal-github-icon" name="logo-github"></ion-icon>
-                                        <span class="source-code-text">Source Code</span>
-                                    </div>
-                                </button>
-                            </a>
-
-                            
-                        </button>
-
-                    </div>
-
-                </div>
-            </div>
+            <p class="close-btn">&times;</p>
         </div>
-        <button class="modal-btn">
-            <ion-icon class="close-modal" name="close-outline"></ion-icon>
-        </button>
     </div>
 
-    <!-- --- --- -->
-    <!-- MODAL 2 -->
-    <!-- --- --- -->
-
-    <div class="modal-bg-2">
-        <div class="modal">
-            <h2 class="modal-title">Portfolio Item #2</h2>
-            <div class="modal-line">&nbsp;</div>
-            <div class="modal-content grid">
-
-                <div class="modal-img-wrapper-2">
-                    <div class="modal-img-2"></div>
-                </div>
-
-                <div class="modal-info">
-                    <h2 class="modal-info-title">GM Plumbing Website</h2>
-                    <p class="paragraph modal-paragraph">
-                        This website is currently under construction. It will be multiple page wordpress based application
-                        using custom CSS and Javascript. It will be custom designed with image galleries, a testimonial carousel, and contact forms.
-                    </p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-
-
-                    <div class="tech-icons">
-                        <ul class="tech-icons-list" style="filter: grayscale(100);">
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/wordpress.png" alt="" title="Wordpress"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/javascript.png" alt="" title="Javascript"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/css-modal.png" alt="" title="CSS3"></li>
-                            <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/html-modal.png" alt=""   title="HTML5"></li>
-                            <!-- <li class="tech-item-1"><img class="modal-img-icon" src="img/modal-1-images/firebase-modal.png" alt=""   title="Google Firebase"></li> -->
-
-                        </ul>
-                    </div>
-                    <div class="modal-btns" style="pointer-events: none;">
-                        <button class="live-demo-btn" style="color: grey; box-shadow: none;">
-                            <div class="icon-wrapper">
-                                <ion-icon class="desktop-icon" name="desktop-outline"></ion-icon>
-                                <span class="live-demo-text">Live Website</span>
-                            </div>
-                        </button>
+    <!-- contact -->
     
-                        <button class="source-code-btn" style="background-color:#fff; color: grey;">
-                            <div class="icon-wrapper">
-                                <ion-icon class="modal-github-icon" name="logo-github"></ion-icon>
-                                <span class="source-code-text">Source Code</span>
-                            </div>
-                            
-                        </button>
+    <section class="contact-section" id="contact">
+        <h2 class="cta-title">Let's Connect</h2>
+        <p class="cta-paragraph">Want to inquire about a project or employment opportunity?<br class="desktop-break"> Fill out the form below and I will
+            return your message shortly.</p>
 
-                    </div>
-
-                </div>
+        <form id="contactForm" name="contactForm" class="contact-form grid grid--2--cols"
+             method="POST">
+            <div class="input-wrapper" id="input-1">
+                <label for="_name">Name</label>
+                <input id="name" type="text" name="_name" class="name" placeholder="Your name">
+                <p id="error-name" class="errorName">*Please enter your name</p>
             </div>
-        </div>
-        <button class="modal-btn-2">
-            <ion-icon class="close-modal" name="close-outline"></ion-icon>
-        </button>
-    </div>
+            <div class="input-wrapper" id="input-2">
+                <label for="_email">Email</label>
+                <input name="_email" id="email" type="text" class="email" placeholder="Your email">
+                <p id="error-email" class="errorEmail">*Please enter an email address</p>
+            </div>
+           <div class="input-wrapper2">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="message"
+            placeholder="Enter your message here"></textarea>
+           </div>
+            <div class="cta-bottom">
+                <button type="submit" class="cta-btn-2" id="cta-btn-2">Send</button>
+                <div class="outlook">
+                    <p class="cta-email">Use Outlook? Simply click the link below:</p>
+                    <a class="cta-link" href="mailTo:dvoranii@ildidev.com"
+                        >dvoranii@ildidev.com</a>
 
-    <!-- -------------- -->
-    <!-- CTA SECTION -- -->
-    <!-- -------------- -->
-
-
-        <section class="contact-section" id="cta">
-            <h2 class="cta-title">Let's Connect</h2>
-            <p class="cta-paragraph">Want to inquire about a project or employment opportunity? Fill out the form below and I will
-                return your message shortly.</p>
-    
-            <form id="form" name="contactForm" class="contact-form grid grid--2--cols"
-                action="https://formspree.io/f/moqrqrle" method="POST">
-                <div class="input-wrapper" id="input-1">
-                    <label for="_name">Name</label>
-                    <input id="name" type="text" name="_name" class="name" placeholder="Your name">
-                    <p id="error-name" class="error-name">*Please enter your name</p>
                 </div>
-                <div class="input-wrapper" id="input-2">
-                    <label for="_email">Email</label>
-                    <input name="_email" id="email" type="text" class="email" placeholder="Your email address">
-                    <p id="error-email" class="error-email">*Please enter an email address</p>
-                    <p id="error-email-2" class="error-email-2">*Please enter a valid email address (123@example.com)</p>
-    
-                </div>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" name="" id="" cols="30" rows="10" class="message"
-                    placeholder="Enter your message here"></textarea>
-    
-                <div class="cta-bottom">
-                    <button type="submit" class="cta-btn-2" id="cta-btn-2">Send</button>
-                    <div class="outlook">
-                        <p class="cta-email">Use Outlook? Simply click the link below:</p>
-                        <a class="cta-link" href="mailTo:dvoranii@ildidev.com"
-                            onclick="window.open(this.href,'_blank')">dvoranii@ildidev.com</a>
-    
-                    </div>
-    
-                    <input type="hidden" name="_next" value="thank-you.html">
-                </div>
-            </form>
-    
-    
-        </section>
+<!-- 
+                <input type="hidden" name="_next" value="thank-you.html"> -->
+            </div>
+        </form>
+    </section>
 
-
-    <!-- ------------ -->
-    <!--FOOTER SECTION-->
-    <!-- ------------ -->
     <section class="footer grid">
         <div class="legal">
-            <img class="ildidev-logo-2" src="img/Asset 3.png" alt="">
-            <p>2021 ILDIDEV ® - All rights reserved </p>
+            <div class="footer-logo-container">
+                <img class="ildidev-logo-2" src="/assets/footer-logo.png" alt="">
+                <p>2021 ILDIDEV ® - All rights reserved </p>
+            </div>
+
         </div>
 
         <div class="footer-navigation">
@@ -471,7 +400,7 @@
                 <li><a href="#projects">Projects</a> </li>
                 
             </ul>
-        </div>
+        </div> 
 
         <div class="footer-socials">
 
@@ -481,35 +410,34 @@
     
                 </div>
                 <div class="social-icon-wrapper">
-                    <ion-icon name="logo-github" style="font-size: 30px;"></ion-icon>
+                    <img src="/assets/logo-github.svg" alt="">
                 </div>
                 <div class="social-text-wrapper">
-                   <a href="https://github.com/dvoranii" onclick="window.open(this.href,'_blank')"><p>Github</p></a>
+                   <a href="https://github.com/dvoranii" target="_blank"><p>Github</p></a>
                 </div>
                 <div class="social-icon-wrapper">
-                    <ion-icon name="logo-codepen" style="font-size: 30px;"></ion-icon>
+                    <img src="/assets/logo-codepen.svg" alt="">
                 </div>
                 <div class="social-text-wrapper">
-                   <a href="https://codepen.io/your-work/?cursor=ZD0wJm89MSZwPTEmdj01NjIzMzk2Mg==" onclick="window.open(this.href,'_blank')"><p>Codepen</p></a> 
+                   <a href="https://codepen.io/your-work/?cursor=ZD0wJm89MSZwPTEmdj01NjIzMzk2Mg==" target="_blank"><p>Codepen</p></a> 
                 </div>
                 <div class="social-icon-wrapper">
-                    <ion-icon name="logo-linkedin" style="font-size: 30px;"></ion-icon>
+                    <img src="/assets/logo-linkedin.svg" alt="">
                 </div>
                 <div class="social-text-wrapper">
-                   <a href="https://www.linkedin.com/in/ildi-dvorani-a04452210/" onclick="window.open(this.href,'_blank')"><p>Linkedin</p></a> 
+                   <a href="https://www.linkedin.com/in/ildi-dvorani-a04452210/" target="_blank"><p>Linkedin</p></a> 
                 </div>
             </div>
 
         </div>
     </section>
-    <script src="script.js"></script>
-    <script src="validator.js"></script>
-
-
-</body>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-
+    <script defer src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js" 
+  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/basicscroll/2.0.0/basicScroll.min.js"></script>
+    <script src="/JS/app.js"></script>
+    <script src="/JS/projects.js"></script>
+    <script src="/JS/contact-form.js"></script>
+  </body>
 </html>

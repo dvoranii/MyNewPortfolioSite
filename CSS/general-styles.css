@@ -1,0 +1,117 @@
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  */
+
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  /* does not work on safari or MS Edge */
+  scroll-behavior: smooth;
+  /* --bg: hsl(odeg, 0%, var(--brightness)); */
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  background-image: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.575) 100%
+    ),
+    url("/assets/paper-background.png");
+  background-size: contain;
+}
+
+::selection {
+  background-color: #1a98ff;
+  color: #fff;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.678);
+}
+
+/* img {
+  object-fit: cover;
+} */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 48px;
+}
+.container-2 {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0px 48px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12px;
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary {
+  font-family: "Roboto", sans-serif;
+  color: #1a98ff;
+  font-size: clamp(24px, 3vw, 32px);
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: clamp(48px, 20vw, 54px);
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+  letter-spacing: 1.5px;
+  padding-top: 96px;
+}
+
+.heading-tertiary {
+  font-family: "Roboto";
+  color: #1a98ff;
+  font-size: clamp(24px, 3vw, 32px);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.service-img-container::before {
+  content: "";
+  display: block;
+  width: 70%;
+  padding-bottom: 70%;
+  background-image: linear-gradient(
+    209.25deg,
+    #00e5ff6c 13.05%,
+    #3cdec69f 88.99%
+  );
+  box-shadow: 0px 20px 80px #00e5ff56;
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 25%;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}

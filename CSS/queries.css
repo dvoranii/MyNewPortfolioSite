@@ -1,0 +1,551 @@
+@media screen and (max-width: 1368px) {
+  .project-title {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    width: 70%;
+  }
+
+  .modal {
+    height: 33vw;
+  }
+
+  .modal-paragraph {
+    font-size: clamp(14px, 1vw, 18px);
+  }
+
+  .tech-item img {
+    width: clamp(30px, 40%, 100px);
+  }
+
+  .modal-btns {
+    margin-top: 18px;
+  }
+
+  .modal-btns button {
+    width: clamp(135px, 30vw, 188px);
+  }
+
+  .tech-icons {
+    padding-top: 24px;
+  }
+
+  .project-header {
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-paragraph {
+    font-size: 12px;
+  }
+
+  .tech-icons-list {
+    max-width: 100%;
+  }
+
+  .modal {
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .skills-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro-text p {
+    max-width: 100%;
+    z-index: 4;
+  }
+
+  .laptop-img img {
+    max-width: 265%;
+    margin-right: 40px;
+  }
+
+  /* .modal {
+    height: 40vw;
+  } */
+  .modal-btns button {
+    width: clamp(135px, 30vw, 159px);
+  }
+
+  .modal-btns span {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: clamp(48px, 8vw, 56px);
+  }
+
+  .hero-job-title-text {
+    font-size: clamp(24px, 4.5vw, 28px);
+  }
+
+  .icon-wrapper {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .tech-icons {
+    padding-top: 12px;
+  }
+
+  /* .modal {
+    height: 40vw;
+  } */
+}
+
+@media screen and (max-width: 870px) {
+  .modal-btns {
+    margin-top: 12px;
+  }
+  .footer {
+    height: 25vh;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .ildidev-logo-2 {
+    width: 15%;
+  }
+
+  .footer-logo-container {
+    padding-bottom: 24px;
+  }
+
+  .tech-item img {
+    width: clamp(25px, 40%, 100px);
+  }
+
+  .grid.grid--2-cols.service-divs {
+    display: block;
+  }
+
+  #service-text-box-1 {
+    padding-right: 0px;
+  }
+
+  #service-text-box-2 {
+    padding-top: 24px;
+  }
+
+  .service-text-box {
+    text-align: center;
+  }
+
+  .see-more {
+    justify-content: center;
+  }
+
+  .text-box-2 {
+    padding-bottom: 32px;
+  }
+
+  #services {
+    margin-bottom: 128px;
+  }
+
+  .laptop-img img {
+    margin-right: -35px;
+    margin-top: -8px;
+    max-width: 320%;
+  }
+}
+
+/* Surface Duo */
+
+@media screen and (max-width: 765px) and (max-height: 540px) {
+  .modal-img-wrapper {
+    display: none;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 540px) and (max-height: 765px) {
+  .modal {
+    height: 80vh;
+  }
+}
+/* ************************************ */
+
+@media (max-width: 765px) {
+  .modal-btns {
+    gap: 0px;
+  }
+
+  .modal-btns button {
+    transform: scale(0.8);
+  }
+
+  .modal-paragraph {
+    font-size: 10px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .hero-btns {
+    padding-top: 24px;
+  }
+
+  .intro-text {
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+    padding-left: 0px;
+    padding-bottom: 24px;
+  }
+
+  .intro-text p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .laptop-img img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .nav-list {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 100%;
+    background: linear-gradient(to top, #32a0fe 0%, #1b7fe4 100%);
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    transform: translateX(100vw);
+  }
+  .nav-links-text {
+    display: flex;
+    padding-bottom: 24px;
+    transition: all 250ms ease;
+    font-size: 18px;
+  }
+  .nav-links-text:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .hero-btn-list-item {
+    padding-right: 0;
+    transform: scale(0.8);
+  }
+
+  .social-icon {
+    transform: scale(0.8);
+    margin-right: 0;
+  }
+
+  .social-icon:hover {
+    transform: scale(0.9);
+  }
+
+  .nav-list {
+    animation: slideRight 250ms ease;
+  }
+  .services-title-container {
+    transform: scale(0.8);
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+
+  .portfolio-items {
+    display: block;
+  }
+
+  .image-box {
+    padding-bottom: 48px;
+  }
+
+  .textbox {
+    height: 350px;
+  }
+
+  /* modal */
+
+  .modal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1fr;
+    height: 120vw;
+  }
+
+  .modal-paragraph {
+    width: 100%;
+  }
+
+  .project-title.desktop {
+    display: none;
+  }
+
+  .project-title.mobile {
+    display: block;
+    padding-bottom: 12px;
+    font-size: 18px;
+  }
+
+  .modal-img-wrapper {
+    grid-row: 1;
+    width: 90%;
+  }
+
+  .project-details {
+    grid-column: 1;
+    justify-content: flex-start;
+    padding-top: 12px;
+    width: 100%;
+  }
+
+  .modal-btns {
+    justify-content: center;
+    padding-top: 12px;
+    /* width: 100%; */
+  }
+
+  .modal-btns button {
+    width: clamp(135px, 40vw, 159px);
+  }
+
+  .modal-img img,
+  .gallery-img-wrapper {
+    align-self: center;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .cta-paragraph {
+    padding-bottom: 24px;
+    max-width: 90%;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .contact-form.grid.grid--2--cols {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.35fr 0.35fr 1fr 1fr;
+    column-gap: 0px;
+  }
+
+  #input-2 {
+    grid-row: 2;
+  }
+
+  .cta-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    justify-content: flex-start;
+  }
+
+  .cta-btn-2 {
+    margin: 0 auto;
+  }
+
+  .cta-email {
+    margin-bottom: 8px;
+  }
+
+  .outlook {
+    padding-top: 24px;
+  }
+
+  .ildidev-logo-2 {
+    width: 25%;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .parallax {
+    display: none;
+  }
+
+  .hero-section {
+    background: rgba(37, 141, 239, 1);
+  }
+
+  header {
+    background: rgba(37, 141, 239, 1);
+  }
+
+  .waves-container {
+    background: linear-gradient(
+      180deg,
+      rgba(37, 141, 239, 1) 0%,
+      rgba(37, 141, 239, 1) 45%,
+      rgba(255, 255, 255, 1) 93%
+    );
+  }
+
+  #services {
+    margin-top: -72px;
+  }
+
+  .modal {
+    height: 135vw;
+  }
+
+  .hero.container {
+    padding: 0px;
+  }
+
+  .container-2 {
+    padding: 0px 16px;
+  }
+
+  .hero-btns {
+    transform: scale(0.9);
+  }
+
+  .project-details {
+    padding: 0px;
+  }
+
+  .project-title.mobile {
+    font-size: 16px;
+  }
+
+  .modal-img-wrapper {
+    height: fit-content;
+  }
+
+  .logo {
+    width: 40px;
+  }
+  .ildidev-logo-2 {
+    padding-top: 24px;
+    width: 70%;
+  }
+
+  .legal {
+    align-items: center;
+  }
+
+  .social-title,
+  .footer-nav-title {
+    font-size: 14px;
+  }
+
+  .sticky header {
+    height: 4.5rem;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .services-title-container {
+    margin-top: 0px;
+  }
+
+  .services-title {
+    margin-bottom: 0.5rem;
+    font-size: 48px;
+  }
+
+  .section--services {
+    margin-top: 24px;
+  }
+
+  .services-title-container-inner::before {
+    bottom: 6px;
+    height: 32px;
+    width: 96px;
+  }
+
+  .services-title-container-inner2::before {
+    height: 32px;
+    bottom: 10px;
+    width: 80px;
+  }
+
+  .services-title-container-inner3::before {
+    width: 109px;
+    height: 32px;
+    bottom: 4px;
+  }
+
+  .line {
+    width: 190px;
+    margin-bottom: 56px;
+  }
+
+  #line2,
+  #line3 {
+    width: 145px;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .services-title-container {
+    margin-top: 96px;
+  }
+
+  .social-text-wrapper p,
+  .footer-list li {
+    font-size: 12px;
+  }
+  .footer-socials {
+    margin-top: 14px;
+  }
+  /* header {
+    padding: 0rem 1.2rem 3rem 3rem;
+  } */
+}
+
+@media screen and (max-width: 360px) {
+  .modal {
+    height: 150vw;
+  }
+
+  .hero-btns {
+    transform: scale(0.7);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero-job-title-text {
+    font-size: 18px;
+  }
+
+  .intro-text p {
+    font-size: 12px;
+  }
+}
