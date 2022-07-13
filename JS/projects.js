@@ -19,7 +19,7 @@ const getModal = (container, index) => {
         <h2 class="project-title mobile">${project[1].title}</h2>
             <img src="${project[1].images.currentImg}" alt="" class="modal-img current-img">
 
-            <!-- use a loop to do this -->
+            <!-- use a function to do this -->
                 <div class="gallery-img-wrapper">
                     <img src="${project[1].images.imgGallery.item1}" id="gallery-item" alt="">
                     <img src="${project[1].images.imgGallery.item2}" id="gallery-item" alt="">
@@ -33,7 +33,7 @@ const getModal = (container, index) => {
             </div>
             <p class="modal-paragraph">${project[1].description}</p>
 
-            <!-- use a loop to do this -->
+            <!-- use a funciton to loop through this -->
                 <div class="tech-icons">
                     <ul class="tech-icons-list">
                         <li class="tech-item tech-item-1"><img src="${project[1].techIcons.icon1}" alt=""></li>
